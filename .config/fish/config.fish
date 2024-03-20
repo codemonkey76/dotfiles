@@ -26,7 +26,9 @@ set -x EDITOR nvim
 
 if test -f ~/.env
     while read -la line
-        set -a line
+        set key (echo $line | cut -d= -f1)
+        set value (echo $line | cut -d= -f2)
+        set -x $key $value
     end < ~/.env
 end
 

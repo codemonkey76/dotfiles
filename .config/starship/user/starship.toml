@@ -415,7 +415,7 @@ ignore_submodules = false
 disabled = false
 
 [golang]
-format = "[$symbol($version )]($style)"
+format = "[$symbol ]($style)"
 version_format = "v${raw}"
 symbol = "🐹 "
 style = "bold cyan"
