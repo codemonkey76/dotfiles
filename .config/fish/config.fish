@@ -18,11 +18,13 @@ set -x fish_user_paths $HOME/.cargo/bin $fish_user_paths
 if [ "$EUID" -ne 0 ]
   set -x STARSHIP_CONFIG $HOME/.config/starship/user/starship.toml
 else
-  set -x STARSHIP_CONFIG $HOME/.config/starship/root/starship.toml
+  set -x STARSHIP_CONFIG /home/shane/.config/starship/root/starship.toml
 end
 
 set -x VISUAL nvim
 set -x EDITOR nvim
+
+set -x SHELL /usr/bin/fish
 
 if test -f ~/.env
     while read -la line

@@ -59,7 +59,7 @@ detect_files = [
 detect_folders = []
 
 [bun]
-format = "[$symbol($version )]($style)"
+format = "[$symbol ]($style)"
 version_format = "v${raw}"
 symbol = "🍞 "
 style = "bold red"
@@ -656,7 +656,7 @@ disabled = false
 heuristic = false
 
 [nodejs]
-format = "[$symbol($version )]($style)"
+format = "[$symbol ]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold green"
