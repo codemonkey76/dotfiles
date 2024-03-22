@@ -23,17 +23,19 @@ end
 
 set -x VISUAL nvim
 set -x EDITOR nvim
+set -x GTK_THEME "Catpuccin-Mocha-Blue-Dark"
 
 set -x SHELL /usr/bin/fish
 
 if test -f ~/.env
     while read -la line
-        set key (echo $line | cut -d= -f1)
-        set value (echo $line | cut -d= -f2)
+        set -l key (echo $line | cut -d= -f1)
+        set -l value (echo $line | cut -d= -f2)
         set -x $key $value
     end < ~/.env
 end
 
+set -x WLR_NO_HARDWARE_CURSORS 1
 set fish_greeting
 
 starship init fish | source
