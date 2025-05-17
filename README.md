@@ -7,7 +7,8 @@ Each tool's configuration lives in its own folder, symlinked into place using GN
 - `tmux` -> `~/.config/tmux` && `~/.tmux`
 - `bin` -> `~/bin`
 - `zsh` -> `~/.config/zshrc` && `~/.zshrc`
-
+- `hyprland` - `~/.config/hypr`
+ 
 ## 📥 Installation
 
 Clone the repo recursively:
