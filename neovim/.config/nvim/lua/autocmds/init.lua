@@ -14,3 +14,5 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 require 'autocmds.shell'
 require 'autocmds.lua'
+require 'autocmds.rasi'
+require 'autocmds.jsonc'

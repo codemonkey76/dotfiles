@@ -64,6 +64,27 @@ tooltip label {
 	padding: 0;
 	margin: 0;
 }
+
+#custom-wg {
+	padding: 0 0.6em;
+	border-radius: 0.4em;
+}
+
+#custom-wg.active {
+	background-color: @indigo-600;
+	color: #f9f8ff;
+}
+
+#custom-wg.inactive {
+	background-color: @gray-700;
+	color: @gray-400;
+}
+
+#custom-wg.inactive:hover {
+	background-color: @gray-600;
+	color: @gray-200;
+}
+
 #clock {
 	margin-right: 0.5em;
 }
