@@ -1,0 +1,42 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": ["idle_inhibitor", "hyprland/workspaces"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["clock"],
+	"spacing": 2,
+	"start_hidden": false,
+	"modifier-reset": "press", // or release
+	"reload_style_on_change": true, // good for debugging
+
+	"idle_inhibitor": {
+ 	   "format": "{icon}",
+	    "format-icons": {
+        	"activated": "",
+	        "deactivated": ""
+	    }
+	},
+	"hyprland/window": {
+		"rewrite": {
+			"(.*) - Brave": "🌎 $1",
+			"(.*) - fish": "> [$1]"
+		},
+	},
+	"hyprland/workspaces": {
+		"persistent-workspaces": {
+			"eDP-1": [1, 2, 3, 4, 5],
+		},
+	},
+	"clock": {
+  		"format": "  {:%I:%M %p}",  // double-space using non-breaking space
+  		"format-alt": "🗓️  {:%A, %B %d, %Y (%I:%M %p)}",
+  		"actions": {
+    			"on-click": "mode",
+    			"on-click-right": "mode",
+    			"on-scroll-up": "mode",
+    			"on-scroll-down": "mode"
+ 		},
+  		"tooltip-format": "<big>{:%A, %d %B %Y}</big>"
+	},
+    },
+}
