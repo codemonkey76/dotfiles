@@ -1,0 +1,5 @@
+alias ff=fastfetch
+alias vim=nvim
+alias mc="tmux attach-session -t mcserver"
+alias stow="stow --target=$HOME"
+

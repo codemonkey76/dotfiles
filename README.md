@@ -6,6 +6,7 @@ Each tool's configuration lives in its own folder, symlinked into place using GN
 - `neovim` → `~/.config/nvim`
 - `tmux` -> `~/.config/tmux` && `~/.tmux`
 - `bin` -> `~/bin`
+- `zsh` -> `~/.config/zshrc` && `~/.zshrc`
 
 ## 📥 Installation
 
