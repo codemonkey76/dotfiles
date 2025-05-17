@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'sh', 'bash' },
+  pattern = { 'sh', 'bash', 'zsh' },
   callback = function()
     vim.bo.expandtab = true -- Use spaces instead of tabs
     vim.bo.shiftwidth = 4 -- Indent width

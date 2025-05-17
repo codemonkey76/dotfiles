@@ -7,7 +7,23 @@ return {
     {
       '<leader>f',
       function()
-        require('conform').format { async = true, lsp_format = 'fallback' }
+        print 'Running reformat'
+        local conform = require 'conform'
+        local bufnr = vim.api.nvim_get_current_buf()
+
+        local formatters = conform.list_formatters_for_buffer(bufnr)
+        if formatters and #formatters > 0 then
+          conform.format {
+            bufnr = bufnr,
+            async = true,
+            lsp_fallback = true,
+            timeout_ms = 1000,
+          }
+        else
+          print 'Running fallback'
+          vim.cmd 'normal! gg=G'
+          vim.notify('No formatter available, falling back to gg=G', vim.log.levels.INFO)
+        end
       end,
       mode = '',
       desc = '[F]ormat buffer',
