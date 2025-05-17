@@ -5,6 +5,7 @@ Each tool's configuration lives in its own folder, symlinked into place using GN
 ## 📦 Included Configs
 - `neovim` → `~/.config/nvim`
 - `tmux` -> `~/.config/tmux` && `~/.tmux`
+- `bin` -> `~/bin`
 
 ## 📥 Installation
 
@@ -44,8 +45,7 @@ You can repeat this for other modules:
 
 ```bash
 stow tmux
-stow zsh
-stow alacritty
+stow bin
 ```
 
 Or stow everything:
