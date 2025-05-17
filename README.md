@@ -3,7 +3,8 @@ Modular, Stow-powered dotfiles for my development environment.
 Each tool's configuration lives in its own folder, symlinked into place using GNU Stow.
 
 ## 📦 Included Configs
-- `neovim` → ``~/.config/nvim``
+- `neovim` → `~/.config/nvim`
+- `tmux` -> `~/.config/tmux` && `~/.tmux`
 
 ## 📥 Installation
 
