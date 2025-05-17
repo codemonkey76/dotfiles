@@ -10,14 +10,14 @@ Each tool's configuration lives in its own folder, symlinked into place using GN
 Clone the repo recursively:
 
 ```bash
-git clone https://github.com/yourusername/dotfiles.git ~/dev/dotfiles
-cd ~/dev/dotfiles
+git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 ```
 
 If you're using SSH:
 
 ```bash
-git clone git@github.com:yourusername/dotfiles.git ~/dev/dotfiles
+git clone git@github.com:yourusername/dotfiles.git ~/dotfiles
 ```
 
 Install GNU Stow if you don’t already have it:
