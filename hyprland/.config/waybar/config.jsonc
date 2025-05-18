@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": ["idle_inhibitor", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["custom/wg", "clock"],
+  "modules-right": ["custom/volume", "custom/wg", "clock"],
   "spacing": 10,
   "start_hidden": false,
   "modifier-reset": "press", // or release
@@ -36,6 +36,15 @@
     "on-scroll-up": "~/.cargo/bin/wg-toggle previous && pkill -RTMIN+15 waybar",
     "on-scroll-down": "~/.cargo/bin/wg-toggle next && pkill -RTMIN+15 waybar",
     "tooltip": true
+  },
+  "custom/volume": {
+    "exec": "waybar-volume && pkill -RTMIN+16 waybar",
+    "on-click": "waybar-volume click-left && pkill -RTMIN+16 waybar",
+    "on-scroll-up": "waybar-volume scroll-up && pkill -RTMIN+16 waybar",
+    "on-scroll-down": "waybar-volume scroll-down && pkill -RTMIN+16 waybar",
+    "interval": 10,
+    "signal": 16,
+    "return-type": "json"
   },
   "clock": {
     "format": "  {:%I:%M %p}",  // double-space using non-breaking space

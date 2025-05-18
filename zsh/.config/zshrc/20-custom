@@ -39,3 +39,6 @@ setopt appendhistory
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/prompt.json)"
 
 [ -f "$XDG_RUNTIME_PATH/hypr-session.env" ] && source "$XDG_RUNTIME_DIR/hypr-session.env"
+
+
+export PATH="$PATH:~/bin"
