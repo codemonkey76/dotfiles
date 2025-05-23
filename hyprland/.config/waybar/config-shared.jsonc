@@ -15,8 +15,8 @@
   ],
   "spacing": 10,
   "start_hidden": false,
-  "modifier-reset": "press",
-  "reload_style_on_change": true,
+  "modifier-reset": "press", // or release
+  "reload_style_on_change": true, // good for debugging
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -50,7 +50,7 @@
     "return-type": "json"
   },
   "clock": {
-    "format": "  {:%I:%M %p}",
+    "format": "  {:%I:%M %p}", // double-space using non-breaking space
     "format-alt": "🗓️  {:%A, %B %d, %Y (%I:%M %p)}",
     "actions": {
       "on-click": "mode",
@@ -59,22 +59,5 @@
       "on-scroll-down": "mode"
     },
     "tooltip-format": "<big>{:%A, %d %B %Y}</big>"
-  },
-  "hyprland/workspaces": {
-    "persistent-workspaces": {
-      "DP-1": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "DP-2": [
-        6,
-        7,
-        8,
-        9
-      ]
-    }
   }
 }

@@ -12,10 +12,10 @@ plugins=(
     archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
-    fast-syntax-highlighting
     copyfile
     copybuffer
     dirhistory
+    autojump
 )
 
 # Set-up oh-my-zsh
@@ -41,4 +41,5 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/prompt.json)"
 [ -f "$XDG_RUNTIME_PATH/hypr-session.env" ] && source "$XDG_RUNTIME_DIR/hypr-session.env"
 
 
-export PATH="$PATH:~/bin"
+export PATH="$HOME/.npm-global/bin:$PATH"
+
