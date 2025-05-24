@@ -25,7 +25,7 @@
             "cache_duration": "none"
           },
           "leading_diamond": "\ue0b6",
-          "template": "{{ .UserName }}",
+          "template": "{{ .HostName }}",
           "foreground": "#f8f8f2",
           "background": "#282a36",
           "type": "session",
@@ -181,4 +181,3 @@
   "patch_pwsh_bleed": true,
   "final_space": true
 }
-
