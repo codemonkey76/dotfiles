@@ -41,10 +41,10 @@
     "tooltip": true
   },
   "custom/volume": {
-    "exec": "~/.config/hypr/scripts/waybar-volume.sh && pkill -RTMIN+16 waybar",
-    "on-click": "~/.config/hypr/scripts/waybar-volume.sh click-left && pkill -RTMIN+16 waybar",
-    "on-scroll-up": "~/.config/hypr/scripts/waybar-volume.sh scroll-up && pkill -RTMIN+16 waybar",
-    "on-scroll-down": "~/.config/hypr/scripts/waybar-volume.sh scroll-down && pkill -RTMIN+16 waybar",
+    "exec": "waybar-volume.sh && pkill -RTMIN+16 waybar",
+    "on-click": "waybar-volume.sh click-left && pkill -RTMIN+16 waybar",
+    "on-scroll-up": "waybar-volume.sh scroll-up && pkill -RTMIN+16 waybar",
+    "on-scroll-down": "waybar-volume.sh scroll-down && pkill -RTMIN+16 waybar",
     "interval": 10,
     "signal": 16,
     "return-type": "json"
