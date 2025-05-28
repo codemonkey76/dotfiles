@@ -83,6 +83,7 @@ tooltip label {
   background-color: @gray-800;
   border-radius: 0.4em;
   transition:background-color 0.2s ease;
+  padding: 0 10px;
 }
 
 #custom-volume:hover {

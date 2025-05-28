@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=NeoMutt Mailto Handler
+Exec=/home/shane/.local/bin/neomutt-mailto-handler.sh %u
+Type=Application
+NoDisplay=true
+Terminal=true
+MimeType=x-scheme-handler/mailto;
+

@@ -41,10 +41,10 @@
     "tooltip": true
   },
   "custom/volume": {
-    "exec": "waybar-volume.sh && pkill -RTMIN+16 waybar",
-    "on-click": "waybar-volume.sh click-left && pkill -RTMIN+16 waybar",
-    "on-scroll-up": "waybar-volume.sh scroll-up && pkill -RTMIN+16 waybar",
-    "on-scroll-down": "waybar-volume.sh scroll-down && pkill -RTMIN+16 waybar",
+    "exec": "/home/shane/.local/bin/waybar-volume.sh && pkill -RTMIN+16 waybar",
+    "on-click": "/home/shane/.local/bin/waybar-volume.sh click-left && pkill -RTMIN+16 waybar",
+    "on-scroll-up": "/home/shane/.local/bin/waybar-volume.sh scroll-up && pkill -RTMIN+16 waybar",
+    "on-scroll-down": "/home/shane/.local/bin/waybar-volume.sh scroll-down && pkill -RTMIN+16 waybar",
     "interval": 10,
     "signal": 16,
     "return-type": "json"

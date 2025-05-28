@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "$(date): wrote config" >>/tmp/gen-config.log
 
 ### 🔧 Hyprland dynamic include generation
 HOSTNAME="$(hostnamectl hostname)"
@@ -31,8 +32,11 @@ if [[ ! -f "$WAYBAR_HOST" ]]; then
   exit 1
 fi
 
+echo "// Generated at: $(date)" >"$WAYBAR_TARGET"
+
 jq -s '.[0] * .[1]' \
   <(npx strip-json-comments "$WAYBAR_SHARED") \
   <(npx strip-json-comments "$WAYBAR_HOST") \
-  >"$WAYBAR_TARGET"
+  >>"$WAYBAR_TARGET"
+
 echo "✅ Regenerated: $WAYBAR_TARGET"

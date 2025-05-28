@@ -77,7 +77,7 @@ main() {
     class="volume"
   fi
 
-  jq -n \
+  jq -c -n \
     --arg text "$icon" \
     --arg tooltip "$tooltip" \
     --arg class "$class" \
