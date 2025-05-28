@@ -44,3 +44,5 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/prompt.json)"
 export PATH="$HOME/.npm-global/bin:$PATH"
 
 export MOZ_ENABLE_WAYLAND=1
+export FZF_DEFAULT_COMMAND='fd --hidden --type l --type f --type d --exclude .git --exclude .cache';
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
